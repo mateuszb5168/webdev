@@ -1,0 +1,24 @@
+body {
+    font-size: 19px;
+}
+
+h1,
+h2 {
+    color: blue;
+}
+
+p {
+    color: purple
+}
+.highlight{
+    background-color: rgb(200, 120, 120);
+}
+.gray {
+    color: gray;
+}
+
+#second {
+    font-style: italic;
+}
+
+/*dont use id selectors in css files*/

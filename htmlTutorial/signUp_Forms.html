@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+</head> 
+
+<body>
+    <h1>sign up brodie</h1>
+    <form>
+        <input type="text" name="name" id="name" placeholder="username" required>
+        <br> <!--no! space elements in C̲S̲S̲-->
+        <input type="email" name="email" id="email" placeholder="email" required>
+
+        <br><br> <!--this should only be for text-->
+        <label>Genders:</label><br> <!--these are only to showcase-->
+
+        <label for="male">Male
+            <input type="radio" name="gender" id="male" value="male" required>
+        </label>
+
+        <label for="female"> Female
+            <input type="radio" name="gender" id="female" value="female" required>
+        </label>
+
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+
+</html>

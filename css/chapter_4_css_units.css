@@ -1,0 +1,18 @@
+h1 {
+    border: 2px dashed rgb(171, 95, 19);
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.75rem;
+
+}
+body {
+    min-height: 100vh;
+}
+main {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+/* pretty kewl stuff */

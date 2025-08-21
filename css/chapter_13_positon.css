@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px #333 dashed;
+    width: 75vw;
+    height: 100vw;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px #00f solid;
+    width: 40vw;
+    height: 60vw;
+    margin: 150px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.relative {
+    background-color: #f07;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: #0dd14b;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    z-index: 1; /*  makes sure its on top    !!!
+                    higher=more important    !!!*/
+
+}
+
+.sticky {
+    background-color: #E29B0C;
+    border-radius: 10%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+section {
+    height: 110vw;
+}
+
+.blue {background-color: #00f;}
+.red {background-color: #f00;}
+.green {background-color: #0f0;}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 50px;
+}
+
+header {
+    font-size: 3rem;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    z-index: 10;
+}
+
+html {
+    scroll-behavior: smooth;
+}
