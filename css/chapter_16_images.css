@@ -22,6 +22,20 @@ img {display: block;}
 body {
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vw;
+    background-color: aliceblue;
+/*     background-image: url(/images/bubbles.png),
+    linear-gradient(to right, #d58626, steelblue);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center;
+    background-size: 20%, auto; */
+}
+
+.container {
+    background-color: rgb(251, 210 , 156);
+    background-image: url('/images/map-2176x1451.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .hero {
@@ -31,12 +45,16 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-
-    background-color: rgb(251, 210 , 156);
+    background-color: hsla(0, 0%, 100%, 0.35);
 }
 
 .h1 {
     font-size: 500%;
+    color: #ffffff;
+    text-shadow: 3px 2px 5px #000;
+/*  background-color: #0000007f;
+    border-radius: 6px;
+    padding: 0.25rem; */
 }
 
 .profile-pic-figure {
@@ -47,7 +65,7 @@ body {
     width: 100%;
     height: auto;
     min-width: 100px;
-    border: 5px double #808080;
+    border: 5px double #282828;
     border-radius: 50%;
 }
 
@@ -60,4 +78,16 @@ body {
 .example img {
     width: 25%;
     height: auto;
+}
+
+.clip {
+    font-weight: 800;
+    font-size: 15rem;
+    text-align: center;
+    background-image: url(/images/scenic-2200x1331.png);
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
