@@ -33,18 +33,18 @@ textarea {
     --BG-COLOR: orange;
     --BGCOLOR-FADE: rgb(252, 220, 160);
     --BGIMAGE: linear-gradient(to bottom, var(--BG-COLOR), var(--BGCOLOR-FADE));
-    --BODY-BGCOLOR: #fff;
+    --BODY-BGCOLOR: rgb(230, 228, 228);
     --FONT-COLOR: #181818;
     --BORDER-COLOR: #333;
     --LINK-COLOR: #111;
     --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
     --LINK-ACTIVE: orange;
     --HEADER-BGCOLOR: #121212;
-    --HEADER-COLOR: #f1f1f1;
+    --HEADER-COLOR: #eaeaea;
     --HIGHLIGHT-COLOR: rgb(51, 178, 51);
     --NAV-BGCOLOR: linear-gradient(to bottom, #e9e9e9, #fefefe);
     --HERO-BGCOLOR: rgba(51, 171, 51, 0.75);
-    --HERO-COLOR: #f1f1f1;
+    --HERO-COLOR: #dddddd;
 
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
@@ -70,6 +70,10 @@ textarea {
 
 .center {
     text-align: center;
+}
+
+.black__text {
+    color: #181818;
 }
 
 /* || GENERAL STYLES */
@@ -267,5 +271,75 @@ a:active {
     background-color: var(--HIGHLIGHT-COLOR);
     color: var(--HEADER-COLOR);
     font-size: var(--FS);
+}
+
+/* || MENU */
+
+thead, tbody, tfoot, tr {
+    display: contents;
+}
+
+.menu__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hd1 hd2 hd3"
+        "cr cr1 cr1p"
+        "cr cr2 cr2p"
+        "cr cr3 cr3p"
+        "sf sf1 sf1p"
+        "sf sf2 sf2p"
+        "sf sf3 sf3p"
+        "cs cs cs";
+    gap: 0.1em;
+    margin-bottom: 1em;
+}
+
+.menu__cr {
+    grid-area: cr;
+}
+
+.menu__sf {
+    grid-area: sf;
+}
+
+.menu__cs {
+    grid-area: cs;
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.menu__cr, .menu__sf, .men {
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.menu__item {
+    display: grid;
+    place-content: center;
+    font-size: 1.15em;
+}
+
+.menu__header {
+    font-size: 1.5em;
+}
+
+.menu__border {
+    border-bottom: 2px solid var(--BORDER-COLOR);
+}
+
+@media screen and (min-width: 576px) {
+    .header__h1::before {
+        content: "🌮 ";
+    } 
+    
+    .header__h1::after {
+        content: " 🌮";
+    }
 }
 
