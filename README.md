@@ -7,5 +7,7 @@ Front end:
   images - resources for the CSS and HTML tutorial
 
 Back end:
-  //not yet
+  the main JavaScript folder is divided into JSx_x folders for chapter number and name.
+
+  im on linux now :)
 
