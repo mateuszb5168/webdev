@@ -8,7 +8,7 @@ class Pizza {
         this.crust = "original";
     }
     get pizzaCrust() {
-        return this.crust;
+        return th   is.crust;
     }
 
     set pizzaCrust(pizzaCrust) { // instead: setCrust/getCrust, then at the bottom myPizza.setCrust
